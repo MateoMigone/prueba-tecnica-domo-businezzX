@@ -1,0 +1,59 @@
+nav.navbar {
+  padding: 25px 30px;
+}
+
+a.link,
+span.link,
+span i {
+  font-weight: bold;
+  color: #022b41;
+  text-decoration: underline white;
+  text-underline-offset: 2px;
+  transition: all 0.5s;
+}
+
+a.link:hover,
+span.link:hover {
+  text-decoration: underline #022b41;
+  text-underline-offset: 10px;
+}
+
+div.vr {
+  border-left: 1px solid black;
+  height: 30px;
+  margin: 0 15px;
+  align-self: center;
+  opacity: 0.1;
+}
+
+div.buttonContainer {
+  margin-right: 0;
+  display: flex;
+  justify-content: end;
+}
+
+button.customOutlineBtn {
+  font-weight: 800;
+  color: #022b41;
+  border: solid 2px #022b41;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+button.customOutlineBtn:hover {
+  background-color: #0097fb;
+  border-color: #0097fb;
+}
+
+i.arrowIcon {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  button.customOutlineBtn {
+    margin-top: 0;
+    padding: 13px 0;
+  }
+}

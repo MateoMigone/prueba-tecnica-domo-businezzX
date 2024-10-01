@@ -1,0 +1,92 @@
+div.formBg {
+  height: 100%;
+  background-image: url(../assets/office.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10%;
+}
+
+div.formContainer {
+  background-color: white;
+  padding: 40px 30px;
+}
+
+span.tag {
+  color: #022b41;
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid #022b41;
+  padding: 10px 16px;
+}
+
+h3.title {
+  color: #022b41;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+input.inputs,
+textarea.inputs {
+  color: #022b41;
+  font-weight: bold;
+}
+
+input.inputs::placeholder,
+textarea.inputs::placeholder {
+  color: #022b41;
+  font-weight: bold;
+}
+
+textarea.inputs {
+  max-height: 150px;
+}
+
+button.customOutlineBtn {
+  font-weight: 800;
+  color: #022b41;
+  border: solid 2px #022b41;
+  padding: 13px 0;
+}
+
+button.customOutlineBtn:hover {
+  background-color: #0097fb;
+  border-color: #0097fb;
+}
+
+div.spinner {
+  color: #0097fb;
+  height: 40px;
+  width: 40px;
+}
+
+.modalTitle,
+.modalHtml div {
+  color: #022b41;
+}
+
+@media (min-width: 576px) {
+  span.tag {
+    font-size: 14px;
+  }
+
+  h3.title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  h3.title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  div.formBg {
+    padding: 15%;
+  }
+
+  h3.title {
+    font-size: 30px;
+  }
+}

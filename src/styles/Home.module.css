@@ -1,0 +1,9 @@
+@media (min-width: 992px) {
+  div.welcome {
+    width: 50%;
+  }
+
+  div.form {
+    width: 50%;
+  }
+}

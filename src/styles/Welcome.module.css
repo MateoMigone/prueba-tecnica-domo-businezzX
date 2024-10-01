@@ -1,0 +1,136 @@
+div.welcome {
+  height: 100%;
+  background-color: #022b41;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  gap: 80px;
+}
+
+div.welcome > div {
+  max-width: 330px;
+}
+
+span.tag {
+  font-size: 12px;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  padding: 10px 16px;
+}
+
+h2.title {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h2.title span {
+  text-decoration: underline;
+  text-decoration-color: #0097fb;
+  text-underline-offset: 10px;
+}
+
+p.text {
+  color: white;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+button.customBtn {
+  font-weight: 800;
+  background-color: white;
+  color: #022b41;
+  border: none;
+  margin-top: 35px;
+  padding: 10px 0;
+}
+
+button.customBtn:hover {
+  color: white;
+  background-color: #0097fb;
+}
+
+i.arrowIcon {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (min-width: 576px) {
+  div.welcome {
+    gap: 90px;
+  }
+
+  div.welcome > div {
+    max-width: 500px;
+  }
+
+  span.tag {
+    font-size: 14px;
+  }
+
+  h2.title {
+    font-size: 56px;
+  }
+
+  h2.title span {
+    text-underline-offset: 15px;
+  }
+
+  p.text {
+    font-size: 23px;
+  }
+
+  button.customBtn {
+    padding: 13px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  div.welcome {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    gap: 100px;
+  }
+
+  div.welcome > div {
+    max-width: 330px;
+  }
+
+  span.tag {
+    font-size: 14px;
+  }
+
+  h2.title {
+    font-size: 40px;
+  }
+
+  h2.title span {
+    text-underline-offset: 10px;
+  }
+
+  p.text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  div.welcome {
+    gap: 120px;
+  }
+
+  div.welcome > div {
+    max-width: 458px;
+  }
+
+  h2.title {
+    font-size: 56px;
+  }
+
+  h2.title span {
+    text-underline-offset: 15px;
+  }
+
+  p.text {
+    font-size: 23px;
+  }
+}
