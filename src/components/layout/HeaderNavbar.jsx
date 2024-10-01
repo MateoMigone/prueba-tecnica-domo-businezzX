@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import styles from "../../styles/HeaderNavbar.module.css";
+import logo from "../../assets/logo.png";
 
 const HeaderNavbar = () => {
   // Flag creada para eliminar el icono de flecha predeterminado por bootstrap que reaparece cada vez que se interactúa con el dropdown
@@ -21,7 +22,7 @@ const HeaderNavbar = () => {
       <Container className={styles.divContainer}>
         <Navbar.Brand href="#home">
           <img
-            src="/src/assets/logo.png"
+            src={logo}
             width="30"
             height="30"
             className="d-inline-block align-top"

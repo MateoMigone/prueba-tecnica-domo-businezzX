@@ -10,7 +10,7 @@ const Footer = () => {
         }
       >
         <div className={"d-flex flex-column " + styles.contact}>
-          <h6>Contacto</h6>
+          <h6>Contact</h6>
           <div className="d-flex flex-column">
             <a href="mailto:mateomigone01@gmail.com" className="d-flex gap-3">
               <i class="bi bi-envelope-fill"></i> mateomigone01@gmail.com
