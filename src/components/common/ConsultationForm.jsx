@@ -33,27 +33,43 @@ const ConsultationForm = () => {
     setTimeout(function () {
       setLoading(false); // Oculto el spinner después de 2 segundos
       // Muestro un modal de confirmación
-      Swal.fire({
-        title: "Confirm consultation?",
-        html: `<hr/><div><b>Name:</b> ${consultation.name}</div><hr/><div><b>Email:</b> ${consultation.email}</div><hr/><div><b>Message:</b> ${consultation.message}</div><hr/> `,
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#0097fb",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Yes, confirm",
-        customClass: {
-          title: styles.modalTitle, // Clase para el título
-          htmlContainer: styles.modalHtml, // Clase para el contenido HTML
-        },
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire({
-            title: "Deleted!",
-            text: "Your file has been deleted.",
-            icon: "success",
-          });
-        }
-      });
+      if (consultation.name && consultation.email && consultation.message) {
+        Swal.fire({
+          title: "Confirm consultation?",
+          html: `<hr/><div><b>Name:</b> ${consultation.name}</div><hr/><div><b>Email:</b> ${consultation.email}</div><hr/><div><b>Message:</b> ${consultation.message}</div><hr/> `,
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#0097fb",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Yes, confirm",
+          customClass: {
+            title: styles.modal, // Clase para el título
+            htmlContainer: styles.modal, // Clase para el contenido HTML
+          },
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire({
+              title: "Confirmed!",
+              text: "Your consultation has been submitted successfully.",
+              icon: "success",
+              confirmButtonColor: "#0097fb",
+              customClass: {
+                title: styles.modal,
+              },
+            });
+          }
+        });
+      } else {
+        Swal.fire({
+          title: "An error ocurred",
+          text: "All fields in the form must be filled",
+          icon: "error",
+          confirmButtonColor: "#0097fb",
+          customClass: {
+            title: styles.modal,
+          },
+        });
+      }
     }, 2000);
   };
 

@@ -60,8 +60,8 @@ div.spinner {
   width: 40px;
 }
 
-.modalTitle,
-.modalHtml div {
+.modal,
+.modal div {
   color: #022b41;
 }
 
